@@ -1,0 +1,352 @@
+
+/*code by Krupal Solanki
+krplsolanki@gmail.com*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.topContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.mainContainer {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.calcHeader {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.toggleTheme {
+  width: 150px;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.themeNumber {
+  height: 50%;
+  width: 50%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.themeNumber span {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.toggleContainer {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggleText {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.toggleTextSpan {
+  font-size: 13px;
+}
+
+.toggleSlide {
+  width: 50%;
+  height: 100%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.toggleNav {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+}
+
+.calcScreen {
+  width: 100%;
+  height: 20%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.output {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.calcKeyPad {
+  width: 100%;
+  height: 65%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.numberKey {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btnStyle {
+  width: 75px;
+  height: 45px;
+  border: 0px;
+  border-radius: 8px;
+  font-size: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.resetKey {
+  height: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.secondtnStyle {
+  height: 50px;
+  width: 170px;
+  border: 0px;
+  border-radius: 8px;
+  font-size: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.resetBtn, .ouputBtn,
+.multipyBtn, .divideBtn,
+.minusBtn, .addBtn, .delBtn {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/***********************toggleBetweenTheme****************/
+.theme1Active {
+  justify-content: flex-start;
+}
+
+.theme2Active {
+  justify-content: center;
+}
+
+.theme3Active {
+  justify-content: flex-end;
+}
+
+/**********************************************************/
+/********************Theme1*******************/
+.theme1BG {
+  background: hsl(222, 26%, 31%);
+}
+
+.theme1fontColor {
+  color: white;
+}
+
+.theme1Logo {
+  color: white;
+}
+
+.theme1toggleSlide {
+  border: 0px;
+  background: hsl(223, 31%, 20%);
+}
+
+.theme1toggleNav {
+  border: 0px;
+  background: hsl(6, 63%, 50%);
+}
+
+.theme1Screen {
+  background: hsl(224, 36%, 15%);
+  color: white;
+}
+
+.theme1KeyPad {
+  background: hsl(223, 31%, 20%);
+}
+
+.them1KeyNtn {
+  background: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  box-shadow: 0px 5px 0px hsl(28, 16%, 65%);
+  cursor: pointer;
+}
+
+.them1SecondaryKeyNtn {
+  background: hsl(6, 63%, 50%);
+  color: white;
+  box-shadow: 0px 5px 0px hsl(6, 70%, 34%);
+}
+
+.theme1ThirdKeyNtn {
+  background: hsl(225, 21%, 49%);
+  color: white;
+  box-shadow: 0px 5px 0px hsl(224, 28%, 35%);
+}
+
+/*********************************************/
+/**********************theme2********************/
+.theme2BG {
+  background: hsl(0, 0%, 90%);
+}
+
+.theme2fontColor {
+  color: hsl(60, 10%, 19%);
+}
+
+.theme2Logo {
+  color: hsl(60, 10%, 19%);
+}
+
+.theme2toggleSlide {
+  border: 0px;
+  background: hsl(0, 5%, 81%);
+}
+
+.theme2toggleNav {
+  border: 0px;
+  background: hsl(25, 98%, 40%);
+}
+
+.theme2Screen {
+  background: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
+}
+
+.theme2KeyPad {
+  background: hsl(0, 5%, 81%);
+}
+
+.them2KeyNtn {
+  background: hsl(45, 7%, 89%);
+  color: hsl(60, 10%, 19%);
+  box-shadow: 0px 5px 0px hsl(35, 11%, 61%);
+}
+
+.them2SecondaryKeyNtn {
+  background: hsl(25, 98%, 40%);
+  color: white;
+  box-shadow: 0px 5px 0px hsl(25, 99%, 27%);
+}
+
+.theme2ThirdKeyNtn {
+  background: hsl(185, 42%, 37%);
+  color: white;
+  box-shadow: 0px 5px 0px hsl(185, 58%, 25%);
+}
+
+/************************************theme3****************/
+.theme3BG {
+  background: hsl(268, 75%, 9%);
+}
+
+.theme3fontColor {
+  color: hsl(52, 100%, 62%);
+}
+
+.theme3Logo {
+  color: hsl(52, 100%, 62%);
+}
+
+.theme3toggleSlide {
+  border: 0px;
+  background: hsl(268, 71%, 12%);
+}
+
+.theme3toggleNav {
+  border: 0px;
+  background: hsl(176, 100%, 44%);
+}
+
+.theme3Screen {
+  background: hsl(268, 71%, 12%);
+  color: hsl(52, 100%, 62%);
+}
+
+.theme3KeyPad {
+  background: hsl(223, 31%, 20%);
+}
+
+.them3KeyNtn {
+  background: hsl(268, 47%, 21%);
+  color: hsl(52, 100%, 62%);
+  box-shadow: 0px 5px 0px hsl(290, 70%, 36%);
+}
+
+.them3SecondaryKeyNtn {
+  background: hsl(176, 100%, 44%);
+  color: white;
+  box-shadow: 0px 5px 0px hsl(177, 92%, 70%);
+}
+
+.theme3ThirdKeyNtn {
+  background: hsl(281, 89%, 26%);
+  color: white;
+  box-shadow: 0px 5px 0px hsl(285, 91%, 52%);
+}

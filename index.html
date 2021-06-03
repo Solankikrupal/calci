@@ -1,0 +1,87 @@
+<!--
+/*code by Krupal Solanki
+krplsolanki@gmail.com*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="topContainer theme1BG">
+  <div class="mainContainer">
+      <div class="calcHeader">
+            <div class="header">
+              <h2 class="logo theme1Logo">calc</h2>
+            </div>
+            <div class="toggleTheme">
+                <div class="themeNumber">
+                  <span  class="toggle1 theme1fontColor">1</span>
+                  <span class="toggle2 theme1fontColor">2</span>
+                  <span class="toggle3 theme1fontColor">3</span>
+                </div>
+                <div class="toggleContainer">
+                  <div class="toggleText">
+                    <span class="toggleTextSpan theme1fontColor">THEME</span>
+                  </div>
+                  <div class="toggleSlide theme1Active theme1toggleSlide ">
+                      <div class="toggleNav theme1toggleNav">
+
+                      </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+      <div class="calcScreen theme1Screen">
+          <h2 class="output">Output</h2>
+      </div>
+      <div class="calcKeyPad theme1KeyPad">
+          <div class="numberKey">
+              <button class="btnStyle number them1KeyNtn" type="button" name="button">7</button>
+              <button class="btnStyle number them1KeyNtn" type="button" name="button">8</button>
+              <button class="btnStyle number them1KeyNtn" type="button" name="button">9</button>
+              <button class="btnStyle sbtn delBtn them1KeyNtn theme1ThirdKeyNtn" type="button" name="button">DEL</button>
+              <button class="btnStyle number them1KeyNtn" type="button" name="button">4</button>
+              <button class="btnStyle number them1KeyNtn" type="button" name="button">5</button>
+              <button class="btnStyle number them1KeyNtn" type="button" name="button">6</button>
+              <button class="btnStyle mathBtn addBtn them1KeyNtn" type="button" name="button">+</button>
+              <button class="btnStyle number them1KeyNtn" type="button" name="button">1</button>
+              <button class="btnStyle number them1KeyNtn" type="button" name="button">2</button>
+              <button class="btnStyle number them1KeyNtn" type="button" name="button">3</button>
+              <button class="btnStyle mathBtn minusBtn them1KeyNtn" type="button" name="button">-</button>
+              <button class="btnStyle dotBtn them1KeyNtn" type="button" name="button">.</button>
+              <button class="btnStyle number them1KeyNtn" type="button" name="button">0</button>
+              <button class="btnStyle mathBtn divideBtn them1KeyNtn" type="button" name="button">/</button>
+              <button class="btnStyle mathBtn multipyBtn them1KeyNtn" type="button" name="button">x</button>
+
+          </div>
+          <div class="resetKey">
+            <button class="secondtnStyle sbtn resetBtn them1KeyNtn theme1ThirdKeyNtn" type="button" name="button">RESET</button>
+            <button class="secondtnStyle ouputBtn them1KeyNtn them1SecondaryKeyNtn" type="button" name="button">=</button>
+          </div>
+      </div>
+
+  </div>
+
+
+</div>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="https://github.com/Solankikrupal">Krupal Solanki</a>.
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
